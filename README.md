@@ -11,12 +11,29 @@ React Native Maps Leaflet brings powerful, interactive maps to your React Native
 
 **React Native Maps Leaflet** brings the power of the popular [Leaflet](https://leafletjs.com/) JavaScript library to React Native. Whether you're building a delivery app, a location-based service, or a data visualization tool, you can easily add interactive maps with custom markers, tile layers, and more!
 
-## Features 🎯
-
-
 ## Installation 📦
 
 To install **React Native Maps Leaflet**, simply run the following command:
 
 ```bash
 npm install @netizen-teknologi/react-native-maps-leaflet
+```
+
+install dependencies
+
+```bash
+npx expo install react-native-webview
+```
+
+## Features 🎯
+
+React Native Maps Leaflet offers a range of features to help developers create powerful mapping applications with ease:
+
+1. **Interactive Maps**: Utilize Leaflet's interactivity to add maps that support panning, zooming, and dragging.
+2. **Custom Markers**: Add custom markers to represent locations on the map with your own icons or images.
+3. **Popups and Tooltips**: Attach popups or tooltips to your markers to display additional information on user interaction.
+4. **Cross-Platform Compatibility**: Fully compatible with both iOS and Android devices.
+5. **Map Event Handlers**: Capture various events like `onClick`, `onMove`, and `onMoveEnd` to implement custom interactions.
+6. **Lightweight and Performant**: Designed to be fast and responsive, ensuring a smooth user experience even on lower-end devices.
+
+These features make React Native Maps Leaflet a powerful tool for building interactive mapping applications tailored to your specific needs.

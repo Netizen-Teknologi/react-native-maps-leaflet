@@ -1,6 +1,6 @@
 {
   "name": "@netizen-teknologi/react-native-maps-leaflet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native Maps Leaflet brings powerful, interactive maps to your React Native apps using Leaflet. Add custom markers, popups, and tile layers. Perfect for real estate, travel, delivery tracking, and logistics. Compatible with iOS and Android, it provides a seamless and dynamic map experience.",
   "main": "index.tsx",
   "scripts": {
@@ -21,7 +21,7 @@
   ],
   "author": "rinaldycodes",
   "license": "ISC",
-  "homepage": "https://github.com/Netizen-Teknologi/react-native-maps-leaflet#readme",
+  "homepage": "https://netizen-teknologi.github.io/react-native-maps-leaflet/",
   "bugs": {
     "url": "https://github.com/Netizen-Teknologi/react-native-maps-leaflet/issues"
   },
