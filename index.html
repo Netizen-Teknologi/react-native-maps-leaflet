@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #03A9F3;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #03A9F3;
+            border-bottom: 2px solid #03A9F3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 5px;
+            display: block;
+            margin: 10px 0;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+
+        nav {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            color: #03A9F3;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #03A9F3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .content {
+            flex: 3;
+        }
+
+        .sidebar {
+            flex: 1;
+            margin-right: 20px;
+            position: sticky;
+            top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                margin-bottom: 20px;
+            }
+        }
+
+        .sponsor {
+            background-color: #fff3cd;
+            color: #856404;
+            padding: 20px;
+            border: 1px solid #ffeeba;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+
+        .issues {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>REACT NATIVE MAPS LEAFLET</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar with navigation -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#cara-install">How to Install</a></li>
+                    <li><a href="#usage">Usage</a></li>
+                    <li><a href="#props">Props</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#sponsor">Become a Sponsor</a></li>
+                    <li><a href="#issues">Issues & Contributions</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main content -->
+        <main class="content">
+            <!-- Section How to Install -->
+            <section id="cara-install">
+                <h2>How to Install</h2>
+                <p>To install this library, you can use a package manager such as <code>npm</code> or <code>yarn</code>. Use the following command:</p>
+                <pre><code>npm i @netizen-teknologi/react-native-maps-leaflet</code></pre>
+                <p>Or using <code>yarn</code>:</p>
+                <pre><code>yarn add @netizen-teknologi/react-native-maps-leaflet</code></pre>
+              
+              <h3>Required Dependencies</h3>
+    <p>This library requires the following dependencies:</p>
+    <ul>
+        <li><strong>react-native-webview</strong>: Used for rendering web content inside the React Native app.</li>
+        <pre><code>npm i react-native-webview</code></pre>
+
+    </ul>
+
+    <p>Ensure that these dependencies are installed to properly use the library.</p>
+            </section>
+
+            <!-- Section Usage -->
+            <section id="usage">
+                <h2>Usage</h2>
+                <p>After installation, you can start using the library as follows:</p>
+                <pre><code>import { MapView } from '@netizen-teknologi/react-native-maps-leaflet';</code></pre>
+                <p>Here is an example of how to use it in your application:</p>
+              <a href="https://snack.expo.dev/@rinaldycodes/driver-app">Example of snack</a>
+            </section>
+          
+         <!-- Section Props -->
+        <section id="props">
+            <h2>Props</h2>
+            <p>Below is the list of available props for the MapView component:</p>
+            <ul>
+                <li><strong>markers</strong> (Array): An array of marker objects used to display locations on the map.
+                    <ul>
+                        <li><em>latitude</em> (String): The latitude of the marker.</li>
+                        <li><em>longitude</em> (String): The longitude of the marker.</li>
+                        <li><em>iconUrl</em> (String): A URL of the icon to display for the marker.</li>
+                    </ul>
+                </li>
+                <li><strong>zoom</strong> (Number): The zoom level for the map, where a higher number zooms in closer to the location.</li>
+                <li><strong>mapOnClick</strong> (Function): A callback function triggered when the map is clicked. Receives the click event, including the latitude and longitude of the clicked point.</li>
+                <li><strong>mapOnMove</strong> (Function): A callback function triggered when the map is moving (during dragging or programmatic movements). Receives the updated map position.</li>
+                <li><strong>mapOnMoveEnd</strong> (Function): A callback function triggered when the map movement ends. This is typically used to get the final position after dragging or zooming.</li>
+            </ul>
+        </section>
+
+        <!-- Section FAQ -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p>Here are some frequently asked questions:</p>
+            <ul>
+                <li><strong>How do I get the latest version?</strong><br/>You can update it using the command <code>npm update</code> or <code>yarn upgrade</code>.</li>
+                <li><strong>Does this library support TypeScript?</strong><br/>Yes, this library supports TypeScript by default.</li>
+            </ul>
+        </section>
+
+        <!-- Section Support -->
+        <section id="support">
+            <h2>Support</h2>
+            <p>If you need help, feel free to contact our support team at <a href="netizenteknologi@gmail.com">netizenteknologi@gmail.com</a>.</p>
+        </section>
+
+        <!-- Section Become a Sponsor -->
+        <section id="sponsor" class="sponsor">
+            <h2>Become a Sponsor</h2>
+            <p>Help us grow and keep this project alive by becoming a sponsor! Your support helps us maintain and develop new features for the library.</p>
+            <p>If you're interested in becoming a sponsor, please contact us at <a href="netizenteknologi@gmail.com">netizenteknologi@gmail.com</a>. Thank you for your generosity!</p>
+        </section>
+
+        <!-- Section Issues & Contributions -->
+        <section id="issues" class="issues">
+            <h2>Issues & Contributions</h2>
+            <p>If you encounter any issues or bugs, please let us know by opening an issue on our <a href="https://github.com/netizen-teknologi/react-native-maps-leaflet/issues">GitHub Issues page</a>.</p>
+            <p>We welcome contributions from the community! If you'd like to contribute, please check out our <a href="https://github.com/netizen-teknologi/react-native-maps-leaflet/CONTRIBUTING.md">contribution guidelines</a> to get started.</p>
+        </section>
+
+    </main>
+    </div>
+
+    <footer>
+        <p>© 2024 Documentation. All rights reserved.</p>
+    </footer>
+</body>
+</html>
