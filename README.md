@@ -1,42 +1,50 @@
-# react-native-maps-leaflet
-React Native Maps Leaflet brings powerful, interactive maps to your React Native apps using Leaflet. Add custom markers, popups, and tile layers. Perfect for real estate, travel, delivery tracking, and logistics. Compatible with iOS and Android, it provides a seamless and dynamic map experience.
+# Welcome to your Expo app 👋
 
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-# React Native Maps Leaflet 🌍
+## Get started
 
-[![npm version](https://img.shields.io/npm/v/@netizen-teknologi/react-native-maps-leaflet)](https://www.npmjs.com/package/@netizen-teknologi/react-native-maps-leaflet)
-[![GitHub stars](https://img.shields.io/github/stars/@netizen-teknologi/react-native-maps-leaflet)](https://github.com/netizen-teknologi/react-native-maps-leaflet/stargazers)
-[![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/netizen-teknologi/react-native-maps-leaflet/issues)
-[![Downloads](https://img.shields.io/npm/dt/@netizen-teknologi/react-native-maps-leaflet.svg)](https://www.npmjs.com/package/@netizen-teknologi/react-native-maps-leaflet)
+1. Install dependencies
 
-**React Native Maps Leaflet** brings the power of the popular [Leaflet](https://leafletjs.com/) JavaScript library to React Native. Whether you're building a delivery app, a location-based service, or a data visualization tool, you can easily add interactive maps with custom markers, tile layers, and more!
+   ```bash
+   npm install
+   ```
 
-## Installation 📦
+2. Start the app
 
-To install **React Native Maps Leaflet**, simply run the following command:
+   ```bash
+    npx expo start
+   ```
+
+In the output, you'll find options to open the app in a
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
 
 ```bash
-npm install @netizen-teknologi/react-native-maps-leaflet
+npm run reset-project
 ```
 
-install dependencies
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-```bash
-npx expo install react-native-webview
-```
+## Learn more
 
-## Changelog
-1. Add Support for web browser;
+To learn more about developing your project with Expo, look at the following resources:
 
-## Features 🎯
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-React Native Maps Leaflet offers a range of features to help developers create powerful mapping applications with ease:
+## Join the community
 
-1. **Interactive Maps**: Utilize Leaflet's interactivity to add maps that support panning, zooming, and dragging.
-2. **Custom Markers**: Add custom markers to represent locations on the map with your own icons or images.
-3. **Popups and Tooltips**: Attach popups or tooltips to your markers to display additional information on user interaction.
-4. **Cross-Platform Compatibility**: Fully compatible with both Web, iOS, and Android devices.
-5. **Map Event Handlers**: Capture various events like `onClick`, `onMove`, and `onMoveEnd` to implement custom interactions.
-6. **Lightweight and Performant**: Designed to be fast and responsive, ensuring a smooth user experience even on lower-end devices.
+Join our community of developers creating universal apps.
 
-These features make React Native Maps Leaflet a powerful tool for building interactive mapping applications tailored to your specific needs.
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
