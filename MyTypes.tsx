@@ -19,6 +19,7 @@ export interface MapViewProps {
     zoom?: number;
     fitBound?: boolean;
     showMarkerClicked?: boolean;
+    showAttribution?: boolean;
 
     // FEATURE MAP
     mapOnClick?: (data: any) => void;
@@ -34,4 +35,5 @@ export interface MyHTMLProps {
     zoom: number,
     fitBound: boolean;
     showMarkerClicked?: boolean;
+    showAttribution?: boolean;
 }

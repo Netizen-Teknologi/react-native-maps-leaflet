@@ -17,6 +17,7 @@ export default function MapView({
   zoom = 15,
   fitBound = false,
   showMarkerClicked = false,
+  showAttribution = true,
 
   mapOnClick = defaultFunction,
   mapOnMove = defaultFunction,
@@ -76,7 +77,8 @@ export default function MapView({
     markerCenter,
     zoom,
     fitBound,
-    showMarkerClicked
+    showMarkerClicked,
+    showAttribution
   });
 
 

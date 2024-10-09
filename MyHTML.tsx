@@ -4,7 +4,7 @@ import { MarkerProps, MyHTMLProps } from "./MyTypes";
 import { MyScripts } from "./MyScripts";
 
 export const MyHTML = ({
-    debug, region, markers, markerCenter, zoom, fitBound, showMarkerClicked
+    debug, region, markers, markerCenter, zoom, fitBound, showMarkerClicked, showAttribution
 } : MyHTMLProps) => {
 
     const [markersScript, setMarkerScript] = useState('');
@@ -59,10 +59,10 @@ export const MyHTML = ({
                 // FIRST POSITION
 
                 if ( ${ markers.length > 0 }) {
-                    map = L.map('map').setView([${region.latitude}, ${region.longitude}], ${zoom});
+                    map = L.map('map', { attributionControl:${showAttribution} }).setView([${region.latitude}, ${region.longitude}], ${zoom});
                     moveMarker();
                 } else {
-                    map = L.map('map').setView([${region.latitude}, ${region.longitude}], ${zoom});
+                    map = L.map('map', { attributionControl:${showAttribution} }).setView([${region.latitude}, ${region.longitude}], ${zoom});
                 }
 
                 ${markersScript}
@@ -72,7 +72,7 @@ export const MyHTML = ({
                 // Add Layer OpenStreetMap
                 const tileLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     maxZoom: 19,
-                    attribution: '© OSM | @<a href="https://github.com/Netizen-Teknologi/react-native-maps-leaflet">Netizen Teknologi</a>'
+                    attribution: '© OSM | @<a target="_blank" href="https://netizen-teknologi.github.io/react-native-maps-leaflet/">Netizen Teknologi</a>'
                 }).addTo(map);
 
                 // Event load for tile layer
