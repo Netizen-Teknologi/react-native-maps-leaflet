@@ -45,16 +45,6 @@ export default function MapView({
     }
   }, [markers, region]);
 
-  // // Inject JavaScript untuk memperbarui marker tanpa render ulang
-  // useEffect(() => {
-  //   if (webviewRef.current && markersX.length > 0) {
-  //     const markerUpdateScript = `
-  //       updateMarkers(${JSON.stringify(markersX)});
-  //     `;
-  //     webviewRef.current.injectJavaScript(markerUpdateScript);
-  //   }
-  // }, [markersX]);
-
   // Menghandle pesan yang diterima dari WebView
   const handleOnMessage = (event: any) => {
     const data = JSON.parse(event.nativeEvent.data);

@@ -25,6 +25,9 @@ install dependencies
 npx expo install react-native-webview
 ```
 
+## Changelog
+1. Add Support for web browser;
+
 ## Features 🎯
 
 React Native Maps Leaflet offers a range of features to help developers create powerful mapping applications with ease:
@@ -32,7 +35,7 @@ React Native Maps Leaflet offers a range of features to help developers create p
 1. **Interactive Maps**: Utilize Leaflet's interactivity to add maps that support panning, zooming, and dragging.
 2. **Custom Markers**: Add custom markers to represent locations on the map with your own icons or images.
 3. **Popups and Tooltips**: Attach popups or tooltips to your markers to display additional information on user interaction.
-4. **Cross-Platform Compatibility**: Fully compatible with both iOS and Android devices.
+4. **Cross-Platform Compatibility**: Fully compatible with both Web, iOS, and Android devices.
 5. **Map Event Handlers**: Capture various events like `onClick`, `onMove`, and `onMoveEnd` to implement custom interactions.
 6. **Lightweight and Performant**: Designed to be fast and responsive, ensuring a smooth user experience even on lower-end devices.
 
