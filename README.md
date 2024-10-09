@@ -40,3 +40,7 @@ React Native Maps Leaflet offers a range of features to help developers create p
 6. **Lightweight and Performant**: Designed to be fast and responsive, ensuring a smooth user experience even on lower-end devices.
 
 These features make React Native Maps Leaflet a powerful tool for building interactive mapping applications tailored to your specific needs.
+
+## Example Branch
+
+[Example Branch](https://github.com/Netizen-Teknologi/react-native-maps-leaflet/tree/example)
