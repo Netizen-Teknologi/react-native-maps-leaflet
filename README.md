@@ -25,8 +25,19 @@ install dependencies
 npx expo install react-native-webview
 ```
 
+```bash
+npx expo install react-leaflet
+```
+
+```bash
+npx expo install leaflet
+```
+
 ## Changelog
-1. Add Support for web browser;
+1. NEW ARCHITECTURE
+2. New Component <MapView>
+3. New Component <Marker>
+4. New Component <Popup>
 
 ## Features 🎯
 

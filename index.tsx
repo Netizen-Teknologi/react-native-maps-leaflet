@@ -1,9 +1,9 @@
 import MapView from "./MapView";
-import {  MarkerProps, RegionProps } from './MyTypes';
-
+import Marker from "./Marker";
+import Popup from "./Popup";
 
 export {
     MapView,
-    MarkerProps, 
-    RegionProps
+    Marker,
+    Popup
 }
