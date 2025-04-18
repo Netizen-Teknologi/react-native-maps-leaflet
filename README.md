@@ -1,6 +1,5 @@
-# Welcome to your Expo app 👋
+# Welcome to your React Native Leaflet Example app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
 
@@ -8,6 +7,14 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
    ```bash
    npm install
+   ```
+
+   ```bash
+   npm install react-leaflet@4.2.1
+   ```
+
+   ```bash
+   npm install leaflet@1.9.4
    ```
 
 2. Start the app
@@ -25,22 +32,11 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
+## Join discussion
 
 To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Ask Anything](https://github.com/Netizen-Teknologi/react-native-maps-leaflet/discussions/4): Ask anything what do you want to ask.
 
 ## Join the community
 

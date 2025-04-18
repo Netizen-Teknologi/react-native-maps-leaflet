@@ -4,18 +4,16 @@ import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import { MapView } from '@netizen-teknologi/react-native-maps-leaflet';
+import { MapView, Marker, Popup } from '@/src/react-native-maps-leaflet';
 
 export default function HomeScreen() {
   return (
     <SafeAreaView style={{ flex: 1,}}>
-      <MapView 
-        mapOnClick={(data) => {
-          console.log("map on click", data)
-        }}
-
-        showMarkerClicked
-      />
+      <MapView>
+        <Marker>
+          <Popup>Hello</Popup>
+        </Marker>
+      </MapView>
     </SafeAreaView>
   );
 }
