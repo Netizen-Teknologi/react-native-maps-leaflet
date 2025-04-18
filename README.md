@@ -26,18 +26,18 @@ npx expo install react-native-webview
 ```
 
 ```bash
-npx expo install react-leaflet
+npm install react-leaflet@4.2.1
 ```
 
 ```bash
-npx expo install leaflet
+npm install leaflet@1.9.4
 ```
 
 ## Changelog
-1. NEW ARCHITECTURE
-2. New Component <MapView>
-3. New Component <Marker>
-4. New Component <Popup>
+1. Easily Switch Map Styles  
+    You can change the map tile using the style selector in the top-left corner.
+
+    ![Map style selector preview](image.png)
 
 ## Features 🎯
 
@@ -55,3 +55,14 @@ These features make React Native Maps Leaflet a powerful tool for building inter
 ## Example Branch
 
 [Example Branch](https://github.com/Netizen-Teknologi/react-native-maps-leaflet/tree/example)
+
+## Case
+
+1. **Server Error: `window is not defined`**  
+   **Solution:**
+   - Go to `app.json` file  
+   - Find `"output": "static"`  
+   - Change it to `"output": "single"`  
+   - Save and restart the project  
+
+   ✅ Now it's fixed!

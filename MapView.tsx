@@ -1,14 +1,15 @@
 'use dom';
 
 import { ReactNode, useEffect } from "react";
-// import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, useMap, useMapEvents } from "react-leaflet";
+import { LayersControl, MapContainer, TileLayer, useMap, useMapEvents } from "react-leaflet";
 import React from "react";
 import MapEventHandler from "./MapEventHandler";
 import CustomAttributionControl from "./CustomAttributionControl";
 import ChangeView from "./ChangeView";
-import { defaultCenter, defaultFunctionVoid, defaultScrollWheelZoom, defaultZoom } from "./Constants";
+import { defaultCenter, defaultFunctionVoid, defaultScrollWheelZoom, defaultTileLayers, defaultZoom, optionsTileLayers } from "./Constants";
 import { MapViewProps } from "./Interfaces";
+
+const { BaseLayer } = LayersControl;
 
 const MapView = ({
     children,
@@ -17,6 +18,7 @@ const MapView = ({
     scrollWheelZoom = defaultScrollWheelZoom,
     mapOnClick = defaultFunctionVoid,
     mapOnMoveEnd = defaultFunctionVoid,
+    tileLayers = defaultTileLayers,
 }: MapViewProps) => {
 
     return (
@@ -29,6 +31,18 @@ const MapView = ({
         >
             <ChangeView center={center} zoom={zoom} />
             <CustomAttributionControl />
+            <LayersControl position="topright">
+                {tileLayers.map((layer, index) => {
+                    return (
+                        <BaseLayer checked={index === 0} name={layer.name} key={layer.name}>
+                            <TileLayer
+                                url={layer.url}
+                                attribution={layer.attribution}
+                            />
+                        </BaseLayer>
+                    )
+                })}
+            </LayersControl>
             <TileLayer
                 // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

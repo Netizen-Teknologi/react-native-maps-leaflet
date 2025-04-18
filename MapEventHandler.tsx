@@ -1,14 +1,10 @@
 import { useMapEvents } from "react-leaflet";
-
-interface MapEventHandlerProps {
-    onClick: (data: any) => void;
-    onMoveEnd: (data: any) => void;
-}
+import { MapEventHandlerProps } from "./Interfaces";
 
 const MapEventHandler = ({ onClick, onMoveEnd }: MapEventHandlerProps) => {
-    // Menggunakan useMapEvents untuk menangani event peta
+    // using useMapEvents for event map
     useMapEvents({
-        click(e) {
+        click(e: any) {
             // console.log("Map clicked at:", e.latlng);
             onClick(e.latlng)
         },
@@ -17,7 +13,7 @@ const MapEventHandler = ({ onClick, onMoveEnd }: MapEventHandlerProps) => {
         },
     });
 
-    return null; // Tidak perlu merender komponen visual
+    return null; // do nothing render
 };
 
 export default MapEventHandler;

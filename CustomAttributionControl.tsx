@@ -10,8 +10,8 @@ const CustomAttributionControl = () => {
         const customControl = L.control({ position: "bottomright" });
         customControl.onAdd = () => {
             const div = L.DomUtil.create("div", "custom-attribution");
-            
-            div.innerHTML = `<a href="https://netizen-teknologi.github.io/react-native-maps-leaflet/" target="_blank" rel="noopener noreferrer">Leaflet © Netizen Teknologi</a>`;
+
+            div.innerHTML = `<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors </br><a href="https://netizen-teknologi.github.io/react-native-maps-leaflet/" target="_blank" rel="noopener noreferrer">Leaflet © Netizen Teknologi</a>`;
             div.style.backgroundColor = "white";
             div.style.padding = "10px";
             div.style.borderRadius = "5px";
